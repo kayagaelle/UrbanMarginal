@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import controleur.Controle;
+
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
@@ -26,8 +29,9 @@ public class EntreeJeu extends JFrame {
 	}
 	/**
 	 * Create the frame.
+	 * @param controle 
 	 */
-	public EntreeJeu() {
+	public EntreeJeu(Controle controle) {
 		setTitle("Urban Marginal");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);

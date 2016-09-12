@@ -12,11 +12,17 @@ public class Controle {
 	}
 	// Constructeur 
 	public Controle (){
-		this.frmEntreeJeu = new EntreeJeu(); // 
+		this.frmEntreeJeu = new EntreeJeu(this); // 
 		frmEntreeJeu.setVisible(true);
 		
 	}
 	public void evenementVue (JFrame uneFrame ,Object info ) {
+		if (uneFrame instanceof EntreeJeu){
+			evenementEntreeJeu (info);
+		}
+		
+	}
+	private void evenementEntreeJeu(Object info) {
 		
 		
 	}
